@@ -1,0 +1,12 @@
+<?php
+
+
+function mymodule_theme($existing, $type, $theme, $path) {
+   $current_user = \Drupal::currentUser(); $uid = $current_user->id();
+		
+  return [
+    'my_template' => [
+      'variables' => ['current_user' => $current_user->getUsername()],
+    ],
+  ];
+}

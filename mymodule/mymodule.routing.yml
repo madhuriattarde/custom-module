@@ -1,0 +1,15 @@
+mymodule.content:
+  path: '/mypage'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\MyModuleController::index'
+    _title: 'Welcome to My Custom Page!'
+  requirements:
+    _permission: 'access content'
+
+mymodule.twigcontent:
+  path: '/mypage/twig'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\MyModuleController::firstMethod'
+    _title: ''
+  requirements:
+    _permission: 'access content'	

@@ -1,0 +1,6 @@
+name: My Custom Module
+package: Custom
+type: module
+core: '8.x' 
+description: 'Meets business requirements'
+
